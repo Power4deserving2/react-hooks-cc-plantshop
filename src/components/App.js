@@ -34,3 +34,7 @@ function App() {
 }
 
 export default App;
+
+function handleDeletePlant(deletedId) {
+  setPlants(plants.filter((p) => p.id !== deletedId));
+}
